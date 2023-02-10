@@ -1,0 +1,120 @@
+/* Write your code here. */
+.bg-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  font-family: 'Roboto';
+}
+
+.calculator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 400px;
+}
+
+.heading {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.phrase {
+  color: #e4e7eb;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.input-element {
+  width: 250px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  padding: 8px;
+  outline: none;
+  color: white;
+  font-size: 14px;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: #ffffff;
+  font-family: Roboto;
+  padding: 8px;
+}
+
+.result-container {
+  width: auto;
+  background-color: white;
+  border-radius: 8px;
+  height: 50px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.result {
+  color: #1d976c;
+  font-weight: bold;
+  font-size: 20px;
+  width: 200px;
+}
+
+.image {
+  width: 500px;
+  height: 350px;
+}
+
+@media screen and (max-width: 768px) {
+  .content-container {
+    order: 0;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 50px;
+    text-align: center;
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .image {
+    order: 1;
+    width: 600px;
+    height: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  .input-element {
+    width: 400px;
+  }
+}
